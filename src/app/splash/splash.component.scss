@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  background-color: black;
+  height: 100%;
+}
+
+img {
+  margin-top: 10%;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.splash-text {
+  font-family:
+    "Inter Tight", "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: larger;
+  color: antiquewhite;
+  margin: 0 auto;
+  padding-bottom: 3dvw;
+}
