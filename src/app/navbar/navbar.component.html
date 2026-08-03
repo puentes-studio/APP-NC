@@ -1,0 +1,80 @@
+<nav
+  class="bg-black h-15 w-full fixed border-b border-yellow-500 md:border-none"
+  id="header"
+>
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-6">
+    <div class="relative flex items-center justify-between">
+      <div class="flex flex-1 items-center justify-start">
+        <a class="logo text-3xl text-white ml-5" href="#">v.beltran</a>
+      </div>
+
+      <!-- Hamburger Menu Button -->
+      <button
+        class="block md:hidden text-gray-300 focus:outline-none"
+        (click)="toggleMobileMenu()"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 mr-4"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+
+      <!-- Desktop Menu -->
+      <div
+        class="hidden md:flex absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+      >
+        <div>
+          <a
+            href="/about-page"
+            class="font-light text-gray-300 hover:line-through hover:text-lime-400 hover:italic rounded-md px-2 py-2 text-sm"
+            aria-current="page"
+            >About</a
+          >
+          <a
+            href="/works-page"
+            class="font-light text-gray-300 hover:line-through hover:text-lime-400 hover:italic rounded-md px-2 py-2 text-sm"
+            >Projects</a
+          >
+
+          <a
+            href="contact"
+            class="font-light text-gray-300 hover:line-through hover:text-lime-400 hover:italic rounded-md px-2 py-2 mr-5 text-sm"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      *ngIf="isMobileMenuOpen"
+      class="mt-2 md:hidden bg-black border-t border-yellow-500 items-center"
+    >
+      <a
+        href="/about-page"
+        class="block flex justify-center p-7 font-light text-gray-300 hover:bg-slate-800 hover:text-lime-400 hover:italic rounded-md text-lg"
+        >About</a
+      >
+      <a
+        href="/works-page"
+        class="block flex justify-center p-7 font-light text-gray-300 hover:bg-slate-800 hover:text-lime-400 hover:italic rounded-md text-lg"
+        >Projects</a
+      >
+      <a
+        href="contact"
+        class="block flex justify-center p-7 font-light text-gray-300 hover:bg-slate-800 hover:text-lime-400 hover:italic rounded-md text-lg"
+        >Contact</a
+      >
+    </div>
+  </div>
+</nav>
