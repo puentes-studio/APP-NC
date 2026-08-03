@@ -1,5 +1,5 @@
 <nav
-  class="bg-black h-15 w-full fixed border-b border-yellow-500 md:border-none"
+  class="bg-black h-15 w-full fixed border-b-4 border-blue-500 md:border-none z-30"
   id="header"
 >
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-6">
@@ -41,19 +41,19 @@
         <div>
           <a
             href=""
-            class="text-gray-300 hover:text-blue-800 hover:italic rounded-md px-2 py-2 text-sm"
+            class="text-gray-300 hover:text-blue-400 hover:italic rounded-md px-2 py-2 text-sm"
             aria-current="page"
             >ABOUT</a
           >
           <a
             href=""
-            class="text-gray-300 hover:text-lime-400 hover:italic rounded-md px-2 py-2 text-sm"
+            class="text-gray-300 hover:text-blue-400 hover:italic rounded-md px-2 py-2 text-sm"
             >SERVICES</a
           >
 
           <a
             href=""
-            class="text-gray-300 hover:text-lime-400 hover:italic rounded-md px-2 py-2 mr-5 text-sm"
+            class="text-gray-300 hover:text-blue-400 hover:italic rounded-md px-2 py-2 mr-5 text-sm"
             >CONTACT</a
           >
         </div>
@@ -63,21 +63,21 @@
     <!-- Mobile Menu -->
     <div
       *ngIf="isMobileMenuOpen"
-      class="mt-2 md:hidden bg-black border-t border-yellow-500 items-center"
+      class="mt-2 md:hidden bg-black border-blue-500 items-center"
     >
       <a
         href=""
-        class="block flex justify-center p-7 text-gray-300 hover:bg-slate-800 hover:text-lime-400 hover:italic rounded-md text-lg"
+        class="block flex justify-center p-7 text-gray-300 hover:bg-slate-800 bg-black hover:text-lime-400 hover:italic rounded-md text-lg"
         >ABOUT</a
       >
       <a
         href=""
-        class="block flex justify-center p-7 text-gray-300 hover:bg-slate-800 hover:text-lime-400 hover:italic rounded-md text-lg"
+        class="block flex justify-center p-7 text-gray-300 hover:bg-slate-800 bg-black hover:text-lime-400 hover:italic rounded-md text-lg"
         >SERVICES</a
       >
       <a
         href=""
-        class="block flex justify-center p-7 text-gray-300 hover:bg-slate-800 hover:text-lime-400 hover:italic rounded-md text-lg"
+        class="block flex justify-center p-7 text-gray-300 hover:bg-slate-800 bg-blue-400 hover:text-lime-400 hover:italic rounded-md text-lg"
         >CONTACT</a
       >
     </div>
